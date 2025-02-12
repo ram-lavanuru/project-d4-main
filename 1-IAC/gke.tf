@@ -5,7 +5,7 @@ resource "google_container_cluster" "name" {
   initial_node_count = var.node_count
   node_config {
     machine_type = "e2-medium"
-    disk_type = "30"
+    disk_type_gb = "30"
   }
 }
 
